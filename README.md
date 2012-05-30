@@ -1,13 +1,15 @@
 node-marisa-trie
 ================
 
+marisa-trie for Node.js
+
 ## Requirements
 
  * marisa-trie ( http://code.google.com/p/marisa-trie/ )
 
 ## Installation
 
- * npm install node-marisa-trie
+    npm install node-marisa-trie
 
 ## Usage
 
