@@ -1,0 +1,17 @@
+{ "name" : "node-marisa-trie"
+, "author" : "KOMIYA Atsushi - https://github.com/komiya-atsushi"
+, "description" : "marisa-trie for Node.js"
+, "version" : "0.1.0"
+, "repository" : 
+  { "type" : "git"
+  , "url" : "http://github.com/komiya-atsushi/node-marisa-trie.git"
+  }
+, "bugs" :
+  { "mail" : ""
+  , "url" : "http://github.com/komiya-atsushi/node-marisa-trie/issues"
+  }
+, "main" : "./index.js"
+, "engines" : { "node" : ">=0.6.0" }
+, "os" : [ "linux" ]
+, "licenses" : [ "New BSD" ]
+}
