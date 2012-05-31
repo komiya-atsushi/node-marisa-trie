@@ -1,7 +1,7 @@
-node-marisa-trie
+node-marisa-trie - marisa-trie for Node.js
 ================
 
-marisa-trie for Node.js
+簡潔データ構造を利用した trie のイケてる実装 marisa-trie を、Node.js から使えるようにするためのモジュールです。Node.js v0.6 以降で利用できます。
 
 ## Requirements
 
@@ -9,7 +9,7 @@ marisa-trie for Node.js
 
 ## Installation
 
-    npm install node-marisa-trie
+    $ npm install node-marisa-trie
 
 ## Usage
 
