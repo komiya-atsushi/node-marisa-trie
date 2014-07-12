@@ -42,12 +42,14 @@ Handle<Value> AgentWrap::NewInstance(const Arguments& args) {
   HandleScope scope;
 
   const int argc = args.Length();
-  Handle<Value> argv[argc];
+  Handle<Value>* argv = new Handle<Value>[argc];
   for (int i = 0; i < argc; i++) {
     argv[i] = args[i];
   }
-  
+
   Local<Object> result = constructor->NewInstance(argc, argv);
+
+  delete[] argv;
 
   return scope.Close(result);
 }
