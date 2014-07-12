@@ -48,6 +48,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
  * 未実装の API を実装する。
  * 使い方や API ドキュメントを書く・充実させる。
  * ドキュメントを英語化する。
- * node-gyp でのビルドに対応する。
 
 など。
