@@ -15,6 +15,7 @@
   }
 , "main" : "./index.js"
 , "engines" : { "node" : ">=0.6.0" }
+, "dependencies" : { "node-gyp": "*" }
 , "os" : [ "darwin", "linux", "win32" ]
 , "licenses" : [ "MIT" ]
 }
