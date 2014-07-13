@@ -6,9 +6,9 @@
         'src/node-marisa.cc',
         'src/key.cc',
         'src/query.cc',
-        'src/agent.cc',
-        'src/keyset.cc',
-        'src/trie.cc',
+        'src/agent_wrapper.cc',
+        'src/keyset_wrapper.cc',
+        'src/trie_wrapper.cc',
       ],
       'conditions': [
         ['OS == "win"', {

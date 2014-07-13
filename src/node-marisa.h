@@ -9,9 +9,9 @@
 #include "helper.h"
 //#include "key.h"
 //#include "query.h"
-//#include "agent.h"
-//#include "keyset.h"
-//#include "trie.h"
+//#include "agent_wrapper.h"
+//#include "keyset_wrapper.h"
+//#include "trie_wrapper.h"
 
 #endif
 

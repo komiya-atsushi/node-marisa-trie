@@ -4,7 +4,7 @@
 #define _KEY_H__
 
 #include "node-marisa.h"
-#include "agent.h"
+#include "agent_wrapper.h"
 
 class KeyWrap : node::ObjectWrap {
 public:

@@ -1,6 +1,6 @@
-#include "trie.h"
-#include "keyset.h"
-#include "agent.h"
+#include "trie_wrapper.h"
+#include "keyset_wrapper.h"
+#include "agent_wrapper.h"
 
 using namespace v8;
 using namespace node;
