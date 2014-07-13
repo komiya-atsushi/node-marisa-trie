@@ -12,17 +12,12 @@
       ],
       'conditions': [
         ['OS == "win"', {
-          'libraries': [
-            '-llibmarisa.lib',
+          'dependencies': [
+            'libmarisa.gyp:libmarisa',
           ],
           'include_dirs': [
-            '$(LIBMARISA)/include',
+            'libmarisa',
           ],
-          'msvs_settings': {
-            'VCLinkerTool': {
-              'AdditionalLibraryDirectories': '$(LIBMARISA)/lib',
-            },
-          },
         }],
         ['OS == "mac"', {
           'libraries': [
