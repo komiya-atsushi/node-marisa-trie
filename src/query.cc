@@ -1,5 +1,5 @@
 #include "query.h"
-#include "agent.h"
+#include "agent_wrapper.h"
 
 using namespace v8;
 using namespace node;
@@ -45,7 +45,7 @@ Handle<Value> QueryWrap::NewInstanceFromAgent(Local<Object>& agent) {
   const int argc = 1;
   Handle<Value> argv[argc];
   argv[0] = agent;
-  
+
   Local<Object> result = constructor->NewInstance(argc, argv);
 
   return scope.Close(result);

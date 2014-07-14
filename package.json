@@ -1,8 +1,11 @@
 { "name" : "node-marisa-trie"
 , "author" : "KOMIYA Atsushi - https://github.com/komiya-atsushi"
+, "contributors":
+  [ "GONG Chen <chen.sst@gmail.com> (https://github.com/lotem)"
+  ]
 , "description" : "marisa-trie for Node.js"
-, "version" : "0.1.0"
-, "repository" : 
+, "version" : "0.1.1"
+, "repository" :
   { "type" : "git"
   , "url" : "http://github.com/komiya-atsushi/node-marisa-trie.git"
   }
@@ -12,6 +15,7 @@
   }
 , "main" : "./index.js"
 , "engines" : { "node" : ">=0.6.0" }
-, "os" : [ "linux" ]
+, "dependencies" : { "node-gyp": "*" }
+, "os" : [ "darwin", "linux", "win32" ]
 , "licenses" : [ "MIT" ]
 }
