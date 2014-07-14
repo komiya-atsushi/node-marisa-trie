@@ -2,6 +2,8 @@
 #include "keyset_wrapper.h"
 #include "agent_wrapper.h"
 
+#include <node_buffer.h>
+
 using namespace v8;
 using namespace node;
 
@@ -21,6 +23,7 @@ void TrieWrap::Init(Handle<Object> target) {
 
   NODE_SET_PROTOTYPE_METHOD(tpl, "build", TrieWrap::Build);
   NODE_SET_PROTOTYPE_METHOD(tpl, "mmap", TrieWrap::Mmap);
+  NODE_SET_PROTOTYPE_METHOD(tpl, "map", TrieWrap::Map);
   NODE_SET_PROTOTYPE_METHOD(tpl, "load", TrieWrap::Load);
   NODE_SET_PROTOTYPE_METHOD(tpl, "save", TrieWrap::Save);
   NODE_SET_PROTOTYPE_METHOD(tpl, "lookup", TrieWrap::Lookup);
@@ -93,6 +96,20 @@ Handle<Value> TrieWrap::Mmap(const Arguments& args) {
     TrieWrap *inst = ObjectWrap::Unwrap<TrieWrap>(args.This());
     String::Utf8Value arg0(args[0]->ToString());
     inst->trie_.mmap(*arg0);
+
+    return Undefined();
+  }
+
+  return ThrowException(Exception::Error(String::New("Wrong argument(s).")));
+}
+
+Handle<Value> TrieWrap::Map(const Arguments& args) {
+  HandleScope scope;
+
+  if (args.Length() == 1 && Buffer::HasInstance(args[0])) {
+    TrieWrap *inst = ObjectWrap::Unwrap<TrieWrap>(args.This());
+    Local<Object> buffer = args[0]->ToObject();
+    inst->trie_.map(Buffer::Data(buffer), Buffer::Length(buffer));
 
     return Undefined();
   }
