@@ -120,8 +120,8 @@ Handle<Value> AgentWrap::SetQuery1(HandleScope& scope, AgentWrap *inst, String::
 }
 
 Handle<Value> AgentWrap::SetQuery2(HandleScope& scope, AgentWrap *inst, int32_t arg0) {
-  // TODO ここに実装コードを記述します。
-
+  // Reverse lookup the key with key_id.
+  inst->agent_.set_query(static_cast<uint32_t>(arg0));
   return Undefined();
 }
 
