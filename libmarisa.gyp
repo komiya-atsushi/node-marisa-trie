@@ -18,6 +18,12 @@
       'include_dirs': [
         'libmarisa',
       ],
+      'conditions': [
+        ['OS == "linux"', {
+          'cflags!': [ '-fno-exceptions' ],
+          'cflags_cc!': [ '-fno-exceptions' ],
+        }],
+      ],
     },
   ],
 }
