@@ -18,6 +18,7 @@ private:
   static v8::Handle<v8::Value> New(const v8::Arguments& args);
   static v8::Handle<v8::Value> Build(const v8::Arguments& args);
   static v8::Handle<v8::Value> Mmap(const v8::Arguments& args);
+  static v8::Handle<v8::Value> Map(const v8::Arguments& args);
   static v8::Handle<v8::Value> Load(const v8::Arguments& args);
   static v8::Handle<v8::Value> Save(const v8::Arguments& args);
   static v8::Handle<v8::Value> Lookup(const v8::Arguments& args);
